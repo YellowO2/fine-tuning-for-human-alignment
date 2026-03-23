@@ -38,6 +38,7 @@ def save_accuracy_summary(
     model_name: str,
     is_thinking: bool,
     output_file: Path,
+    input_dataset_file: str = "",
     accuracy_percent: float,
     correct_count: int,
     total_count: int,
@@ -49,9 +50,11 @@ def save_accuracy_summary(
     row = {
         "model": model_name + (" (thinking)" if is_thinking else ""),
         "output_file": output_file.name, #only the filename, not full path
+        "dataset": input_dataset_file,
         "accuracy_percent": round(accuracy_percent, 3),
         "correct": correct_count,
         "total": total_count,
+        "input_dataset_file": input_dataset_file #this was added afterwards
     }
 
     if summary_path.exists():

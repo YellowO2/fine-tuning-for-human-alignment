@@ -1,0 +1,145 @@
+dataset,sample_id,meta,expected,llm_response,llm_thinking,is_correct
+jester,jester-4-0,Rank 1 vs 69,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it creates a clever twist with the ""lost wife"" metaphor, adding a humorous element of confusion and irony. The setup is more engaging and the punchline is more unexpected and witty compared to Joke A, which is more straightforward.",,False
+jester,jester-4-1,Rank 2 vs 70,Joke B,Joke B,,True
+jester,jester-4-2,Rank 3 vs 71,Joke A,Joke A,,True
+jester,jester-4-3,Rank 4 vs 72,Joke A,Joke A,,True
+jester,jester-4-4,Rank 5 vs 73,Joke A,Joke A,,True
+jester,jester-4-5,Rank 6 vs 74,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it uses a clever twist and a relatable situation, with the doctor as the ""guy"" who bought the paintings. It's a classic setup that plays on the idea of a client buying art, and the twist of it being the artist's doctor adds a layer of humor and irony. Joke A is more straightforward and less humorous in comparison.",,False
+jester,jester-4-6,Rank 7 vs 75,Joke B,"Joke A
+
+Joke A is funnier because it plays on a common misunderstanding and the absurdity of a talking pig, creating a humorous and unexpected punchline. Joke B, while also humorous, is more emotionally charged and less funny in a comedic sense.",,False
+jester,jester-4-7,Rank 8 vs 76,Joke B,Joke B,,True
+jester,jester-4-8,Rank 9 vs 77,Joke A,Joke A,,True
+jester,jester-4-9,Rank 10 vs 78,Joke A,Joke A,,True
+jester,jester-4-10,Rank 11 vs 79,Joke B,"Joke B is funnier.
+
+**Reason:**  
+Joke B plays on the absurdity of religious rituals and the idea of being ""quiet"" when passing a room, which is a logical and expected behavior in a religious context. The humor comes from the unexpected and illogical instructions, which contrast with the usual expectations of religious practices. Joke A, while funny, is more of a situational comedy with a twist, but it lacks the same level of absurdity and unexpected logic found in Joke B.",,False
+jester,jester-4-11,Rank 12 vs 80,Joke B,Joke B,,True
+jester,jester-4-12,Rank 13 vs 81,Joke A,Joke A,,True
+jester,jester-4-13,Rank 14 vs 82,Joke B,Joke B,,True
+jester,jester-4-14,Rank 15 vs 83,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it uses a clever twist and a humorous misunderstanding, especially with the auto-generated radio responses. The contrast between the expected and the actual outcome creates a funny situation, while Joke A is more of a logical progression in a typical ""problem-solution"" format, which is less humorous.",,False
+jester,jester-4-15,Rank 16 vs 84,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays on the contrast between the teacher's serious explanation and the student's sarcastic response. The student's comment—""Yeah, right""—is a classic example of irony and sarcasm, which makes the joke more humorous and unexpected. Joke A is more straightforward and less funny in comparison.",,False
+jester,jester-4-16,Rank 17 vs 85,Joke B,"Joke B is funnier.
+
+**Reason:**  
+Joke B is a classic riddle with a clever twist. It uses irony and wordplay to highlight the contrast between the engineer's expertise and the absurdity of the situation. The humor comes from the unexpected conclusion— the engineer's fee is just a ""chalk mark"" and the ""knowing where to put it"" is the real solution. The joke is clever, unexpected, and builds up to a punchline that is both amusing and thought-provoking.
+
+Joke A is more of a logical argument with a factual statement, which is less funny in terms of humor.
+
+**Answer:** Joke B",,False
+jester,jester-4-17,Rank 18 vs 86,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays on the absurdity of the engineer's response to a seemingly generous job offer, while Joke A is more of a wordplay joke with a twist. The humor in Joke B comes from the unexpected and exaggerated reaction to a job offer that seems too good to be true, creating a humorous contrast between the engineer's surprise and the interviewer's seemingly generous offer.",,False
+jester,jester-4-18,Rank 19 vs 87,Joke B,"Joke B
+
+Joke B is funnier because it plays on the absurdity of the situation with a clever twist. The friends are in a hotel that's supposed to be for women only, and the signs are progressively more absurd, leading to a humorous and unexpected conclusion. The final sign, ""There are no men here. This floor was built only to prove that there is no way to please a woman,"" adds a clever and ironic twist to the situation.",,False
+jester,jester-4-19,Rank 20 vs 88,Joke A,Joke A,,True
+jester,jester-4-20,Rank 21 vs 89,Joke A,Joke B,,False
+jester,jester-4-21,Rank 22 vs 90,Joke A,Joke A,,True
+jester,jester-4-22,Rank 23 vs 91,Joke A,"Joke A
+
+Explanation: Joke A is funnier because it has a clever play on words and a humorous twist. The Pope's confusion over the letter ""R"" in the Bible reflects a real-life situation where people might miss important details or overlook key elements, adding a layer of relatability and humor. The joke builds up with the Pope's frustration and the Angels' concern, creating a funny and engaging scenario. Joke B, while funny, is more straightforward and lacks the same level of wordplay and surprise.",,False
+jester,jester-4-23,Rank 24 vs 92,Joke B,Joke A,,False
+jester,jester-4-24,Rank 25 vs 93,Joke B,Joke A,,False
+jester,jester-4-25,Rank 26 vs 94,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it uses a clever twist and a relatable situation, making the punchline more surprising and engaging. Joke A is a bit more abstract and less humorous in its setup.",,False
+jester,jester-4-26,Rank 27 vs 95,Joke A,Joke A,,True
+jester,jester-4-27,Rank 28 vs 96,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays with the absurdity of a ""work station"" in a bus and train station, creating a humorous contradiction and a clever twist. It's a classic example of wordplay and unexpected humor.",,False
+jester,jester-4-28,Rank 29 vs 97,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it uses a clever play on words and a humorous twist with the repeated ""MacGregor"" refrain, creating a satirical and ironic tone. The absurdity of the situation—building everything but not being called by the name of the thing he built—adds to the humor.",,False
+jester,jester-4-29,Rank 30 vs 98,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays on the absurdity of the rules in a college setting, creating a humorous situation with the male student asking for a season pass. The rules are clearly ridiculous, and the student's question adds a layer of humor by highlighting the absurdity of the rule. Joke A is more straightforward and less funny in comparison.",,False
+jester,jester-4-30,Rank 31 vs 99,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it contains a clever twist and a surprising detail that adds humor through irony and unexpectedness. The pig with a wooden leg is a surprising and unexpected element, making the joke more engaging and amusing.",,False
+jester,jester-4-31,Rank 32 vs 100,Joke A,Joke B,,False
+jester,jester-4-32,Rank 33 vs 101,Joke B,Joke B,,True
+jester,jester-4-33,Rank 34 vs 102,Joke A,Joke A,,True
+jester,jester-4-34,Rank 35 vs 103,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it uses a play on words with the phrase ""screw in a light bulb,"" which is a common idiom. It's a clever and unexpected twist that's easy to understand and laugh at, making it more humorous than Joke A, which is more of a wordplay joke but less clever in its delivery.",,False
+jester,jester-4-35,Rank 36 vs 104,Joke A,Joke B,,False
+jester,jester-4-36,Rank 37 vs 105,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays on the irony of a person telling the priest that they're Jewish, yet they're still telling the priest everything. It creates a humorous twist with the implied ""I'm telling everyone"" line, making it more unexpected and funny compared to Joke A, which is more of a wordplay joke with a straightforward answer.",,False
+jester,jester-4-37,Rank 38 vs 106,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it uses a clever play on words and a humorous twist. The poodle's situation is relatable and the punchline about being ""not allowed on the couch"" adds a humorous and unexpected twist, making it more engaging and funny compared to Joke A, which is more of a straightforward joke with a slightly mundane setup.",,False
+jester,jester-4-38,Rank 39 vs 107,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it uses a clever and unexpected twist, combining a humorous situation with a wordplay (""rectum"" instead of ""ass"") and a surprising punchline (""wrecked him!? Hell, It damn near killed him!""). It creates a funny and unexpected scenario that is more engaging and clever than Joke A, which is a straightforward and slightly cliché joke.",,False
+jester,jester-4-39,Rank 40 vs 108,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it plays on the word ""twins"" and the idea of identity, creating a humorous twist with the names ""Amal"" and ""Juan."" The punchline relies on the reader's understanding of the relationship between the two names and the context of being twins. Joke A is more straightforward and less humorous in its delivery.",,False
+jester,jester-4-40,Rank 41 vs 109,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it uses a lot of filler words and repetition, creating a comedic effect through the absurdity of the man's response. The exaggerated repetition and lack of coherent response make it more humorous than Joke A, which is more of a logical, albeit silly, dialogue.",,False
+jester,jester-4-41,Rank 42 vs 110,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it plays on the contrast between the atheist's lack of religious belief and the unexpected response to an orgasm, which is a surprising and unexpected twist. Joke A is more of a humorous situation with a bit of irony, but it's not as funny in terms of the punchline and the context.",,False
+jester,jester-4-42,Rank 43 vs 111,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it plays on the word ""duck"" in a clever and unexpected way. The duck is asking for a condom, and the pharmacist responds with a pun that highlights the duck's self-awareness and humor. It's a clever twist on the idea of a duck asking for something that's not typically associated with it, making it more amusing than Joke A, which is a straightforward play on words but less humorous in context.",,False
+jester,jester-4-43,Rank 44 vs 112,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it creates a humorous and unexpected situation with a classic childhood memory, making the punchline more relatable and surprising. Joke A is more of a wordplay joke with a slightly awkward twist, which is less funny in comparison.",,False
+jester,jester-4-44,Rank 45 vs 113,Joke B,Joke B,,True
+jester,jester-4-45,Rank 46 vs 114,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it's a clever play on the idea of a calendar that goes from March 31 to April 2nd, which is impossible, and it's a direct reference to Chuck Norris' unparalleled ability to do anything, making it a punchline that's both unexpected and humorous.",,False
+jester,jester-4-46,Rank 47 vs 115,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays on the absurdity of the situation with a twist. The pharmacist's slap is unexpected and the man's reaction is both humorous and ironic. The joke relies on the unexpected twist and the absurdity of the situation, making it more engaging and funny than Joke A, which is more straightforward and less humorous in its setup.",,False
+jester,jester-4-47,Rank 48 vs 116,Joke A,Joke B,,False
+jester,jester-4-48,Rank 49 vs 117,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it uses a clever play on words with the bear's ""big paws"" and the word ""peanuts."" The humor comes from the unexpected twist and the double meaning of ""big paws"" in the context of eating peanuts. Joke A is more straightforward and less humorous in terms of wordplay.",,False
+jester,jester-4-49,Rank 50 vs 118,Joke A,Joke A,,True
+jester,jester-4-50,Rank 51 vs 119,Joke A,Joke A,,True
+jester,jester-4-51,Rank 52 vs 120,Joke B,Joke B,,True
+jester,jester-4-52,Rank 53 vs 121,Joke A,Joke A,,True
+jester,jester-4-53,Rank 54 vs 122,Joke B,"Joke B
+
+Joke B is funnier because it is a clever and unexpected twist that plays with the concept of politics in a humorous and absurd way. It uses a child's innocent perspective to mock the real-world political system, making the joke both funny and thought-provoking.",,False
+jester,jester-4-54,Rank 55 vs 123,Joke A,Joke A,,True
+jester,jester-4-55,Rank 56 vs 124,Joke A,Joke B,,False
+jester,jester-4-56,Rank 57 vs 125,Joke A,Joke A,,True
+jester,jester-4-57,Rank 58 vs 126,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays with the irony and the unexpected twist. The lawyer is so focused on his car that he ignores the fact that his arm was ripped off. The humor comes from the contrast between his obsession with his car and the tragic accident that happened to him. Joke A is more of a factual comparison, which is less humorous.",,False
+jester,jester-4-58,Rank 59 vs 127,Joke A,Joke A,,True
+jester,jester-4-59,Rank 60 vs 128,Joke A,"Joke A
+
+Explanation: Joke A is funnier because it has a clever wordplay and a punchline that plays on the dual meaning of ""panda"" — both as a bear and as a word meaning ""to shoot."" The humor comes from the unexpected twist and the irony of the bear using the word ""panda"" to explain his action. Joke B is a simple and straightforward joke with no wordplay, so it's less humorous.",,False
+jester,jester-4-60,Rank 61 vs 129,Joke B,Joke B,,True
+jester,jester-4-61,Rank 62 vs 130,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays on the absurdity of a Polish joke with a twist of cultural context. The barkeep's warning adds a layer of humor by combining the joke with the setting (a bar) and the cultural elements (Poles, bouncers, customers), making it more unexpected and funny. Joke A is more straightforward and less humorous in its setup.",,False
+jester,jester-4-62,Rank 63 vs 131,Joke A,"Joke B
+
+Explanation: Joke B is funnier because it uses a clever play on words and a surprising twist. It highlights the difference between ordinary time and Chuck Norris' time, which is absolute and non-existent. This creates a humorous contrast and a surprising punchline.",,False
+jester,jester-4-63,Rank 64 vs 132,Joke A,Joke B,,False
+jester,jester-4-64,Rank 65 vs 133,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it uses a dramatic and unexpected twist, with a dark and ominous tone that creates a strong emotional impact. The humor comes from the contrast between the explorer's initial despair and the ironic twist that ""you are not screwed"" — which is then followed by a violent and terrifying outcome. This creates a more engaging and unexpected punchline compared to Joke A, which is more straightforward and lacks the same level of dramatic irony and surprise.",,False
+jester,jester-4-65,Rank 66 vs 134,Joke A,"Joke A is funnier.
+
+**Reason:** Joke A uses a clever twist with the ""24 hours to live"" line, creating a humorous contrast between the good and bad news. The absurdity of the situation adds to the humor. Joke B is more straightforward and less funny in terms of punchline delivery.",,False
+jester,jester-4-66,Rank 67 vs 135,Joke B,"Joke B
+
+Explanation: Joke B is funnier because it plays with the absurdity of the situation and the unexpected outcomes, creating a clever twist and a humorous scenario with a twist. Joke A is more straightforward and less humorous in comparison.",,False
+jester,jester-4-67,Rank 68 vs 136,Joke B,Joke A,,False

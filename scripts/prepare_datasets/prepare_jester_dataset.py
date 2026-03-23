@@ -5,8 +5,8 @@ from pathlib import Path
 MISSING_RATING = 99
 
 def prepare_and_save(dataset_num: int):
-    print(f"Processing Dataset {dataset_num}...")
-    base_path = Path(__file__).parent / "datasets"
+    print(f"Processing Dataset {dataset_num}...") 
+    base_path = Path("datasets") / "jester" #use relative path
     
     # 1. Load jokes
     jokes_file = base_path / f"dataset{dataset_num}JokeSet.csv"

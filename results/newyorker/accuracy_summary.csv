@@ -1,0 +1,8 @@
+model,output_file,accuracy_percent,correct,total,input_dataset_file
+qwen3:14b,llm_eval_qwen3-14b_m3yqj0ru.csv,newyorker_validation_fold0.csv,60.0,90,150,newyorker_validation_fold0.csv
+qwen3:4b-instruct,llm_eval_qwen3-4b-instruct_egiiv_mu.csv,newyorker_validation_fold0.csv,52.0,78,150,newyorker_validation_fold0.csv
+qwen3:8b,llm_eval_qwen3-8b_254an0c7.csv,newyorker_validation_fold0.csv,55.333,83,150,newyorker_validation_fold0.csv
+qwen3:32b,llm_eval_qwen3-32b_pfom4c3_.csv,newyorker_validation_fold0.csv,62.0,93,150,newyorker_validation_fold0.csv
+qwen3:1.7b,llm_eval_qwen3-1.7b_5mm0pebm.csv,newyorker_validation_fold0.csv,60.0,90,150,newyorker_validation_fold0.csv
+qwen3:1.7b,llm_eval_qwen3-1.7b_pqe0ngcb.csv,newyorker_validation_fold0.csv,59.333,89,150,newyorker_validation_fold0.csv
+qwen3:1.7b,llm_eval_qwen3-1.7b_mivnc0xy.csv,newyorker_validation_fold0.csv,60.0,90,150,newyorker_validation_fold0.csv
