@@ -14,7 +14,7 @@ DATASETS = ["newyorker_default"]  # e.g., ["jester"], ["newyorker"], or both
 NUM_RUNS = 2           # Number of times to repeat each evaluation
 
 # Jester options
-JESTER_DATASET_NUMS = [1, 2] # Runs these jester files if "jester" is in DATASETS
+JESTER_DATASET_NUMS = [3, 4] # Runs these jester files if "jester" is in DATASETS
 JESTER_OFFSET_DIVISOR = 2
 
 # New Yorker options

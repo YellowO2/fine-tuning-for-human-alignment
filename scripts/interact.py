@@ -1,6 +1,6 @@
 import requests
 
-API_URL = "http://192.168.0.84:11434/api/chat"
+API_URL = "http://192.168.0.85:11434/api/chat"
 
 
 def ask_llm(prompt: str, model: str, think: bool = False) -> dict[str, str]:
