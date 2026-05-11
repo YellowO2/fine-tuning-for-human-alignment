@@ -1,0 +1,11 @@
+dataset,sample_id,meta,expected,llm_response,llm_thinking,is_correct
+newyorker,fde4151fcca492b42336d3a3dfe8e0dc,NYCC validation fde4151fcca492b42336d3a3dfe8e0dc,Joke B,Joke A,,False
+newyorker,1214b37425713590e915e3af0b1e6e6a,NYCC validation 1214b37425713590e915e3af0b1e6e6a,Joke B,Joke A,,False
+newyorker,953ca7ee0c0673ebc51e6147f68f0233,NYCC validation 953ca7ee0c0673ebc51e6147f68f0233,Joke A,Joke A,,True
+newyorker,b8ecd62018bbd057aaa22277ed24fd68,NYCC validation b8ecd62018bbd057aaa22277ed24fd68,Joke B,Joke A,,False
+newyorker,ce15e7d5a2b0446c455a20b2f97e72a1,NYCC validation ce15e7d5a2b0446c455a20b2f97e72a1,Joke B,Joke A,,False
+newyorker,71c3de544184b953bb9c5cd0660e7574,NYCC validation 71c3de544184b953bb9c5cd0660e7574,Joke B,Joke A,,False
+newyorker,bba482e3fb83f469575fd8706f39dc4c,NYCC validation bba482e3fb83f469575fd8706f39dc4c,Joke A,Joke A,,True
+newyorker,004a0d86afd22c6e8b30b384b73595c1,NYCC validation 004a0d86afd22c6e8b30b384b73595c1,Joke B,Joke A,,False
+newyorker,3156dfd78b55850670c84341bdc764ee,NYCC validation 3156dfd78b55850670c84341bdc764ee,Joke B,Joke A,,False
+newyorker,24acecce90ff5aa46459a6488fbb2f58,NYCC validation 24acecce90ff5aa46459a6488fbb2f58,Joke B,Joke A,,False
