@@ -26,8 +26,9 @@ def ask(prompt: str, model: str, think: bool = False) -> dict:
 class LocalModel:
     """Runs a LoRA checkpoint directly via FastLanguageModel — no merge, no GGUF."""
 
-    def __init__(self, name: str, checkpoint: str, chat_template: str = "gemma-4"):
+    def __init__(self, name: str, checkpoint: str, chat_template: str = "gemma-4", enable_thinking: bool = False):
         self.name = name
+        self._enable_thinking = enable_thinking
         from unsloth import FastLanguageModel
         from unsloth.chat_templates import get_chat_template
         model, tokenizer = FastLanguageModel.from_pretrained(
@@ -46,11 +47,10 @@ class LocalModel:
         # Build messages list: prior history + new user turn
         messages = list(history) if history else []
         messages.append({"role": "user", "content": prompt})
-        text = self._tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
+        kwargs = {"tokenize": False, "add_generation_prompt": True}
+        if self._enable_thinking is not None:
+            kwargs["enable_thinking"] = think if self._enable_thinking else False
+        text = self._tokenizer.apply_chat_template(messages, **kwargs)
         inputs = self._tok(text, return_tensors="pt").to("cuda")
         with torch.no_grad():
             out = self._model.generate(

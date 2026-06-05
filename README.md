@@ -29,7 +29,8 @@ Accuracy on NYCC humor preference (random = 50%):
   gemma4:e2b   (base)      2600      52.3%
   gemma4:e4b   (base)      2600      53.7%
   qwen3.5:9b   (base)      2600      52.4%
-  qwen3:4b     (base)       300      52.0%
+  qwen3:4b     (base)       300      52.0%   <- old (Qwen 3, not 3.5), only 300 examples
+  qwen3.5:4b   (base)      2616      55.9%   <- best baseline
   gemma4-e2b-discord       2616      49.8%   <- fine-tuned, WORSE
   gemma4-e4b-discord       2616      50.6%   <- fine-tuned, WORSE
 
@@ -37,6 +38,8 @@ Key finding: Discord SFT made both Gemma models WORSE (dropped to ~chance).
 Likely cause is task mismatch — we trained on chat *generation* but evaluate
 on preference *discrimination*. The models learned to chat and lost their
 preference-judging ability (symptom: heavy position bias toward "A").
+
+qwen3.5:4b is the strongest baseline at 55.9% — good DPO starting point.
 
 
 ## Architecture gotcha (Gemma 4 E2B / E4B)

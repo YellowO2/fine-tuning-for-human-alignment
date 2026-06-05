@@ -133,7 +133,8 @@ def main():
     for model_spec in MODELS:
         if isinstance(model_spec, tuple):
             name, checkpoint, chat_template = model_spec
-            model = LocalModel(name, checkpoint, chat_template=chat_template)
+            enable_thinking = chat_template in ("qwen-3",)
+            model = LocalModel(name, checkpoint, chat_template=chat_template, enable_thinking=enable_thinking)
         else:
             model = model_spec
         run_test(model, examples)
