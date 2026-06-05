@@ -26,7 +26,7 @@ def ask(prompt: str, model: str, think: bool = False) -> dict:
 class LocalModel:
     """Runs a LoRA checkpoint directly via FastLanguageModel — no merge, no GGUF."""
 
-    def __init__(self, name: str, checkpoint: str):
+    def __init__(self, name: str, checkpoint: str, chat_template: str = "gemma-4"):
         self.name = name
         from unsloth import FastLanguageModel
         from unsloth.chat_templates import get_chat_template
@@ -35,7 +35,7 @@ class LocalModel:
             max_seq_length=2048,
             load_in_4bit=True,
         )
-        tokenizer = get_chat_template(tokenizer, chat_template="gemma-4")
+        tokenizer = get_chat_template(tokenizer, chat_template=chat_template)
         FastLanguageModel.for_inference(model)
         self._model = model
         self._tokenizer = tokenizer  # full tokenizer with apply_chat_template

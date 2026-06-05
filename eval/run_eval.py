@@ -13,9 +13,14 @@ OUTPUTS_DIR = Path(__file__).parent.parent / "outputs"
 # Local models are stored as (name, checkpoint) tuples and loaded one at a time
 # to avoid VRAM pressure from having multiple models resident simultaneously.
 MODELS = [
-    # ("gemma4-e2b-discord", str(OUTPUTS_DIR / "gemma4-e2b-discord" / "checkpoint-4011")),
-    ("gemma4-e4b-discord", str(OUTPUTS_DIR / "gemma4-e4b-discord" / "checkpoint-4011")),
-    # "gemma4:e2b", "gemma4:e4b", "qwen3:4b", "qwen3.5:9b",
+    # ── Ollama baselines (string = model name in Ollama) ──────────────────────
+    # "gemma4:e2b", "gemma4:e4b", "qwen3.5:9b",
+    # ── HF baselines (tuple = name, hf_model_id, chat_template) ──────────────
+    ("qwen3.5:4b", "unsloth/Qwen3.5-4B", "qwen-3"),
+    # ── Fine-tuned LoRA checkpoints (tuple = name, local_path, chat_template) ─
+    # ("gemma4-e2b-discord", str(OUTPUTS_DIR / "gemma4-e2b-discord" / "checkpoint-4011"), "gemma-4"),
+    # ("gemma4-e4b-discord", str(OUTPUTS_DIR / "gemma4-e4b-discord" / "checkpoint-4011"), "gemma-4"),
+    # ("qwen9b-discord",     str(OUTPUTS_DIR / "qwen9b-discord"     / "checkpoint-4011"), "qwen-3"),
 ]
 N_EXAMPLES = None  # total examples to evaluate, None for all (~2600 available)
 THINK      = False
@@ -127,8 +132,8 @@ def main():
     print(f"Loaded {len(examples)} examples across {examples['fold'].nunique()} folds")
     for model_spec in MODELS:
         if isinstance(model_spec, tuple):
-            name, checkpoint = model_spec
-            model = LocalModel(name, checkpoint)
+            name, checkpoint, chat_template = model_spec
+            model = LocalModel(name, checkpoint, chat_template=chat_template)
         else:
             model = model_spec
         run_test(model, examples)
