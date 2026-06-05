@@ -53,8 +53,18 @@ same K and V weight tensors in memory. Consequences:
   (see eval/interact.py LocalModel).
 
 Qwen has standard architecture — no KV sharing — so its LoRA merges and GGUF
-export work normally (Ollama-compatible). GGUF export currently blocked by a
-separate unsloth/llama.cpp converter bug (No module named 'conversion').
+export work normally (Ollama-compatible). qwen9b-discord is exported and loaded
+into Ollama as `qwen9b-discord`.
+
+Note on the export: unsloth's `save_pretrained_gguf` fails on current llama.cpp
+("No module named 'conversion'") — it patches the convert script into a temp dir
+and loses its package context. That is NOT an install problem (training and
+merging work fine). The fix is to do the export manually with the real local
+llama.cpp script — see training/export_qwen_gguf.py:
+  1. merge LoRA -> 16-bit HF model       (save_pretrained_merged)
+  2. HF -> GGUF f16                       (~/.unsloth/llama.cpp/convert_hf_to_gguf.py)
+  3. quantize f16 -> q4_k_m               (~/.unsloth/llama.cpp/llama-quantize)
+  4. ollama create -f Modelfile
 
 
 ## Files
@@ -62,7 +72,8 @@ separate unsloth/llama.cpp converter bug (No module named 'conversion').
   training/
     train_sft.py           Gemma 4 E2B SFT (original)
     train_sft_e4b.py       Gemma 4 E4B SFT
-    train_sft_qwen9b.py    Qwen 3.5 9B SFT (+ GGUF export, currently failing)
+    train_sft_qwen9b.py    Qwen 3.5 9B SFT
+    export_qwen_gguf.py    Qwen LoRA -> merged -> GGUF -> q4_k_m (works)
     export_gguf.py         standalone GGUF export attempt (Gemma, abandoned)
 
   eval/
@@ -89,12 +100,18 @@ Eval (make sure Ollama has nothing loaded — `ollama ps` — to free VRAM):
   python eval/run_eval.py
 
 Chat:
-  python chat.py e4b
+  python chat.py e4b               # Gemma checkpoints, via FastLanguageModel
+  ollama run qwen9b-discord        # Qwen, via Ollama (shareable GGUF)
+
+Export Qwen to GGUF / Ollama:
+  python training/export_qwen_gguf.py all
+  ollama create qwen9b-discord -f outputs/qwen9b-discord-gguf/Modelfile
 
 
 ## Next steps
 
-- Qwen 9B: trained, needs eval (GGUF export optional / currently broken).
+- Qwen 9B: trained and exported to Ollama (`qwen9b-discord`). Still needs the
+  NYCC eval run to get its post-SFT accuracy.
 - The real fix for the accuracy drop is task alignment, not more chat SFT:
     1. Fine-tune directly on the NYCC preference task (A/B labels), OR
     2. Try DPO using NYCC preference pairs (chosen = funnier caption,
